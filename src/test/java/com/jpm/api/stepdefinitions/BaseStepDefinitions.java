@@ -6,11 +6,11 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
 public class BaseStepDefinitions {
-	
+
 	String projectPath = System.getProperty("user.dir");
 	private final String propertyFilePath = projectPath + "\\configs\\config.properties";
 	ConfigFileReader config = new ConfigFileReader(propertyFilePath);
-	
+
 	public static String path;
 
 	// Sets Base URI

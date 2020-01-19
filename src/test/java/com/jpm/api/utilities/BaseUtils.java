@@ -10,11 +10,9 @@ public class BaseUtils {
     public static String path;
     public static String jsonPathTerm;
 
-/*    //Sets Base URI
-    public static void setBaseURI() {
-        RestAssured.baseURI = "https://jsonplaceholder.typicode.com";
-    }*/
-
+	String projectPath = System.getProperty("user.dir");
+//	private final String loggerFilePath = projectPath + "\\log4j.properties";
+	
     //Sets base path
     public static void setBasePath(String basePathTerm) {
         RestAssured.basePath = basePathTerm;
@@ -55,4 +53,12 @@ public class BaseUtils {
         String json = res.asString();
         return new JsonPath(json);
     }
+    
+    
+    //logger - incomplete     
+    public static void logger(String message){
+    	//TODO Need to work
+/*		Logger logger = Logger.getLogger("devpinoyLogger");
+		logger.debug(message);*/
+	}
 }
