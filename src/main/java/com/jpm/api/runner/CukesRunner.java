@@ -8,7 +8,7 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(plugin = { "pretty", "html:target/cucumberHtmlReport" },
 
-		features = { "src/test/resources/features" }, 
+		features = { "src/main/resources/features" }, 
 		glue = { "com.jpm.api.stepdefinitions" }, 
 		tags = { "@API_Test" }
 )
